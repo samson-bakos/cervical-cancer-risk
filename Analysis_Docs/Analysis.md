@@ -136,7 +136,7 @@ deliberately lower precision.
 
 PR Curves against the validation set are shown below:
 
-<img src="../results/07-pr_curve_logreg.png" alt="Figures 2 and 3: PR Curves, Logistic Regression (Left) and Naive Bayes (Right)" width="50%" /><img src="../results/05-pr_curve_nb.png" alt="Figures 2 and 3: PR Curves, Logistic Regression (Left) and Naive Bayes (Right)" width="50%" />
+<img src="../results/06-pr_curve_logreg.png" alt="Figures 2 and 3: PR Curves, Logistic Regression (Left) and Naive Bayes (Right)" width="50%" /><img src="../results/05-pr_curve_nb.png" alt="Figures 2 and 3: PR Curves, Logistic Regression (Left) and Naive Bayes (Right)" width="50%" />
 
 <img src="../results/04-pr_curve_rfc.png" alt="Figures 4 and 5: PR Curves, Random Forest Classifier (Left) and Support Vector Classifier (Right)" width="50%" /><img src="../results/03-pr_curve_svc.png" alt="Figures 4 and 5: PR Curves, Random Forest Classifier (Left) and Support Vector Classifier (Right)" width="50%" />
 
