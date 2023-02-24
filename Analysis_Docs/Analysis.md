@@ -136,9 +136,9 @@ deliberately lower precision.
 
 PR Curves against the validation set are shown below:
 
-<img src="../results/pr_curve_logreg.png" alt="Figures 2 and 3: PR Curves, Logistic Regression (Left) and Naive Bayes (Right)" width="50%" /><img src="../results/pr_curve_nb.png" alt="Figures 2 and 3: PR Curves, Logistic Regression (Left) and Naive Bayes (Right)" width="50%" />
+<img src="../results/07-pr_curve_logreg.png" alt="Figures 2 and 3: PR Curves, Logistic Regression (Left) and Naive Bayes (Right)" width="50%" /><img src="../results/05-pr_curve_nb.png" alt="Figures 2 and 3: PR Curves, Logistic Regression (Left) and Naive Bayes (Right)" width="50%" />
 
-<img src="../results/pr_curve_rfc.png" alt="Figures 4 and 5: PR Curves, Random Forest Classifier (Left) and Support Vector Classifier (Right)" width="50%" /><img src="../results/pr_curve_svc.png" alt="Figures 4 and 5: PR Curves, Random Forest Classifier (Left) and Support Vector Classifier (Right)" width="50%" />
+<img src="../results/04-pr_curve_rfc.png" alt="Figures 4 and 5: PR Curves, Random Forest Classifier (Left) and Support Vector Classifier (Right)" width="50%" /><img src="../results/03-pr_curve_svc.png" alt="Figures 4 and 5: PR Curves, Random Forest Classifier (Left) and Support Vector Classifier (Right)" width="50%" />
 
 We can see from these plots that even the best performing models
 (i.e. Naive Bayes), capture less than 50% of true labels (women with a
@@ -160,7 +160,7 @@ classes may be poorly separable (i.e. cannot be separated by a single
 hyperplane for logistic regression), or that their separation is poorly
 described by our features.
 
-| …1        |   RFC_opt |    NB_opt | LinearSVC_opt |
+|           |   RFC_opt |    NB_opt | LinearSVC_opt |
 |:----------|----------:|----------:|--------------:|
 | precision | 0.3333333 | 0.3939394 |     0.4000000 |
 | recall    | 0.1666667 | 0.5416667 |     0.4166667 |
