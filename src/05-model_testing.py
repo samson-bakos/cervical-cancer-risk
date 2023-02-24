@@ -13,7 +13,6 @@ Options:
 Example:
 python src/05-model_testing.py --data_path='data/processed/test.csv' --output_path='results'
 """
-
 from docopt import docopt
 import numpy as np
 import pandas as pd
@@ -50,7 +49,12 @@ from sklearn.metrics import (
     roc_auc_score,
 )
 
-opt = docopt(__doc__)
+from sklearn.exceptions import ConvergenceWarning, UndefinedMetricWarning
+from sklearn.utils._testing import ignore_warnings
+import warnings
+
+warnings.filterwarnings("ignore", category=ConvergenceWarning)
+warnings.filterwarnings("ignore", category=UndefinedMetricWarning)
 
 
 def better_metrics(y_test, y_hat):
@@ -131,12 +135,13 @@ def main(data_path, output_path):
 
     # All models
 
-    all_test_results = pd.DataFrame(test_results).round( 3)
+    all_test_results = pd.DataFrame(test_results).round(3)
     try:
         all_test_results.to_csv(f"{output_path}/13-test-results.csv")
     except:
-        os.makedirs(os.path.dirname('results/'))
+        os.makedirs(os.path.dirname("results/"))
         all_test_results.to_csv(f"{output_path}/13-test-results.csv")
+
 
 if __name__ == "__main__":
     main(opt["--data_path"], opt["--output_path"])

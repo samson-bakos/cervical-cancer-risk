@@ -1,5 +1,0 @@
-,RFC_opt,NB_opt,LinearSVC_opt
-precision,0.333,0.394,0.385
-recall,0.167,0.542,0.417
-f1,0.222,0.456,0.4
-auc,0.556,0.703,0.654
